@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Perfil </title>
+    <link rel="stylesheet" href="style/iniciarSesion.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="barra-navegadora">
+            <div class="logo-PapuBestie">Papu Besti</div>
+            <div class="contenedor-menu">
+                <a class="item-menu" href="index.html">Store</a>
+                <a class="item-menu" href="wishlist.html">Wishlist</a>
+                <a class="item-menu" href="mejorValorados.html">Mejores Juegos</a>
+                <a class="item-menu" href="acerca.html">Acerca de nosotros</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h1>Gestionar cuenta</h1>
+            <form id="formPerfil" novalidate>
+                <label for="usuarioPerfil">Usuario</label>
+                <input type="text" id="usuarioPerfil" autocomplete="username" required>
+
+                <label for="emailPerfil">Email</label>
+                <input type="email" id="emailPerfil" autocomplete="email" required>
+
+                <label for="contrasenaPerfil">Contraseña</label>
+                <input type="password" id="contrasenaPerfil" autocomplete="new-password" required>
+
+                <small id="mensajePerfil" class="mensaje-perfil" aria-live="polite"></small>
+                <button type="submit" class="btn-ver-mas">Guardar cambios</button>
+                <button type="button" id="cerrarSesion" class="btn-cerrar-sesion">Cerrar sesión</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/perfil.js"></script>
+    <script src="js/CambColor.js"></script>
+    <script src="js/cuenta.js"></script>
+</body>
+</html>
