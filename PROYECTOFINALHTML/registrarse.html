@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - Papu Besti</title>
+    <link rel="stylesheet" href="style/iniciarSesion.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="barra-navegadora">
+        <div class="logo-PapuBesti">Papu Besti</div>
+        <div class="contenedor-menu">
+            <a class="item-menu" href="index.html">Store</a>
+            <a class="item-menu" href="wishlist.html">Wishlist</a>
+            <a class="item-menu" href="mejorValorados.html">Mejores Juegos</a>
+            <a class="item-menu" href="acerca.html">Acerca de nosotros</a>
+        </div>
+    </nav>
+</header>
+
+    <section class="formulario">
+    <h1>Crear cuenta</h1>
+
+    <form id="formregistrarse" novalidate>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" autocomplete="nickname">
+        <small class="error" id="errorUsuario" aria-live="polite"></small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="tuemail@ejemplo.com" autocomplete="email">
+        <small class="error" id="errorEmail" aria-live="polite"></small>
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" autocomplete="new-password">
+        <small class="error" id="errorContrasena" aria-live="polite"></small>
+
+        <button type="submit" class="btn-ver-mas">Crear cuenta</button>
+    </form>
+
+</section>
+
+<footer class="pie">
+    <p> Papu Bestie · Trabajo práctico xd</p>
+    <p> Instagram: matiicvc</p>
+    <p> tiktok: https://www.tiktok.com/@matiicvc2</p>
+    <p> Pagina patrocinada por eneba, con un 50% de descuento en todos sus juegos https://www.eneba.com/latam/collection/exclusive-collection-by-soarinng?utm_source=youtube&amp;utm_campaign=soarinng5&amp;af_id=soarinng5</p>
+</footer>
+
+     <script src="js/registrarse.js"></script>
+     <script src="js/CambColor.js"></script>
+     <script src="js/cuenta.js"></script>
+</body>
+</html>

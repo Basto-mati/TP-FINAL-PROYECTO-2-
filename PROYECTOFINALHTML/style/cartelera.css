@@ -1,0 +1,207 @@
+.contenedor-cartelera {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.titulo-cartelera {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+
+.grilla-peliculas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.tarjeta-pelicula {
+    background-color: #161616;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-pelicula img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.tarjeta-pelicula img:hover {
+    transform: scale(1.02);
+}
+.tarjeta-pelicula a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.poster-contenedor {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 2 / 3;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.poster-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rating-imdb {
+    margin: 0;
+    padding: 10px 16px 0;
+    color: #e8dfd3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info-pelicula {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
+    background-color: #161616;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.wishlist-vacio {
+    color: #c7d5e0;
+}
+
+
+
+.titulo-pelicula {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+h2 {
+color: #ffffff;
+margin-bottom: 20px;
+text-align: center;
+}
+table {
+    width: 80%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin:40px auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+ 
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2a475e;
+    
+}
+
+th {
+    background-color: #171a21;
+    color: #66c0f4;
+    font-size: 1.1em;
+}
+    
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    .contenedor-cartelera {
+        margin: 32px auto;
+        padding: 0 16px;
+    }
+
+    .titulo-cartelera {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .grilla-peliculas,
+    .wishlist-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .info-pelicula {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .titulo-pelicula {
+        font-size: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .tabla-juegos {
+        width: 100%;
+    }
+
+    .tabla-juegos th,
+    .tabla-juegos td {
+        padding: 8px;
+    }
+
+    .tabla-juegos .titulo {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .grilla-peliculas,
+    .wishlist-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.titulo {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 5px 0; 
+    color: #ffffff;
+
+}
+
+.rating {
+    display: table-cell;
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+}
+
+.tabla-juegos .titulo {
+    text-align: left;
+}
